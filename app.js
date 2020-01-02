@@ -35,7 +35,7 @@ app.get('/get-input-code', (req, res, next) => {
     })
 })
 
-//To make this code work should send "secret" and "token" in the bode through POSTMAN or AXIOS can use POST and GET Method
+//To make this code work should send "secret" and "token" in the code through POSTMAN or AXIOS can use POST and GET Method
 app.post('/validate', (req, res, next) => {
     res.send({
         'valid' : Speakeasy.totp.verify({
